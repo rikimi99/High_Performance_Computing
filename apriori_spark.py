@@ -7,7 +7,7 @@ def load_dataset(filename):
     with open(filename, 'r') as file:
         for line in file:
             transaction = line.strip().split(',')
-            dataset.append(set(transaction[1].split(', ')))
+            dataset.append(set(transaction))
     return dataset
 
 def generate_candidates(frequent_itemsets, k):
@@ -61,4 +61,3 @@ if __name__ == "__main__":
     end_time = time.time()
     elapsed_time = end_time - start_time
     print("Elapsed Time:", elapsed_time, "seconds")
-
