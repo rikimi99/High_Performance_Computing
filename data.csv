@@ -1,0 +1,12 @@
+TransactionID,Items
+1,A,B,C,D
+2,A,C,D
+3,B,D,E
+4,A,B,D
+5,A,C
+6,B,D,E
+7,C,E
+8,A,B,D,E
+9,A,C,E
+10,B,D
+
